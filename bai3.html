@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let string = prompt("please input a string")
+  let newStr = ""
+
+  for (let i = 0; i < string.length; i++) {
+    if (i === 0) {
+      newStr += string[i].toLowerCase()
+    } else if (string[i-1] === " "){
+      newStr += string[i].toLowerCase()
+    } else {
+      newStr += string[i].toUpperCase()
+    }
+    console.log(string[i])
+  }
+
+  document.write("You have input: " + string + "<br> <br>")
+  document.write("This is your request: " + newStr)
+</script>
+</body>
+</html>

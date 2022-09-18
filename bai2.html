@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = prompt("Nhập vào 1 số");
+  let array = []
+
+  for (let i = 0; i < num.length; i++) {
+      array.push(num[i])
+  }
+
+  for (let i = 1; i < array.length; i++) {
+      if (parseInt(array[i-1]) % 2 === 0 && parseInt(array[i]) % 2 === 0 ) {
+          array.splice(i, 0, "-")
+          console.log(i)
+      }
+  }
+  document.write(array.join(""))
+</script>
+</body>
+</html>
